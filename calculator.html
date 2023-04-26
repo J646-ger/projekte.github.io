@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="icon" href="projekt.png" />
+    <link rel="stylesheet" href="styes.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <nav class="bg-white border-gray-200">
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    >
+      <a href="index.html" class="flex items-center">
+        <img src="projekt.png" class="h-8 mr-3" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap"
+          >Projekte</span
+        >
+      </a>
+      <button
+        data-collapse-toggle="navbar-default"
+        type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="Lebenslauf.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              >Lebenslauf</a
+            >
+          </li>
+          <li>
+            <a
+              href="calculator.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 bg-blue-100 rounded md:bg-transparent md:text-blue-700 md:p-0"
+              >Taschenrechner</a
+            >
+          </li>
+          <li>
+            <button
+              data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal"
+              class="block text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center"
+              type="button"
+            >
+              Contact Me!
+            </button>
+            <div
+              id="defaultModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow">
+                  <!-- Modal header -->
+                  <div
+                    class="flex items-start justify-between p-4 border-b rounded-t"
+                  >
+                    <h3 class="text-xl font-semibold text-gray-900">Contact</h3>
+                    <button
+                      type="button"
+                      class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                      data-modal-hide="defaultModal"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+
+                  <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500">
+                      E-Mail: Julian-.....@...
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500">
+                      Tel: 015xxxxxxxxxx
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500">
+                      Adresse: Musterstraße 1, 4785 Musterstadt
+                    </p>
+                  </div>
+                  <!-- Modal footer -->
+                  <div
+                    class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b"
+                  >
+                    <button
+                      data-modal-hide="defaultModal"
+                      type="button"
+                      class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Contact
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <a>E-Mail: Julian-.....@...</a>
+                    <br />
+                    <a>Tel: 015xxxxxxxxxx </a>
+                    <br />
+                    <a>Adresse: Musterstraße 1, 4785 Musterstadt </a>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="box-content p-8 case">
+      <div class="case border-4 border-black">
+        <input type="text" id="res" class="sol" />
+      </div>
+
+      <div
+        class="grid grid-cols-4 gap-3 bg-gray-700 p-6 items-center justify-items-center border-4 border-black case"
+      >
+        <input
+          type="button"
+          value="C"
+          class="col-start-3 w-12 h-12 text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-full text-sm text-center"
+          onclick="Clear()"
+        />
+
+        <input
+          type="button"
+          value="/"
+          class="w-12 h-12 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm text-center"
+          onclick="Solve('/')"
+        />
+
+        <input
+          type="button"
+          value="7"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('7')"
+        />
+
+        <input
+          type="button"
+          value="8"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('8')"
+        />
+        <input
+          type="button"
+          value="9"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('9')"
+        />
+
+        <input
+          type="button"
+          value="*"
+          class="w-12 h-12 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm text-center"
+          onclick="Solve('*')"
+        />
+
+        <input
+          type="button"
+          value="4"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('4')"
+        />
+
+        <input
+          type="button"
+          value="5"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('5')"
+        />
+
+        <input
+          type="button"
+          value="6"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('6')"
+        />
+
+        <input
+          type="button"
+          value="-"
+          class="w-12 h-12 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm text-center"
+          onclick="Solve('-')"
+        />
+
+        <input
+          type="button"
+          value="1"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('1')"
+        />
+
+        <input
+          type="button"
+          value="2"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('2')"
+        />
+
+        <input
+          type="button"
+          value="3"
+          class="w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('3')"
+        />
+
+        <input
+          type="button"
+          value="+"
+          class="w-12 h-12 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm text-center text-center"
+          onclick="Solve('+')"
+        />
+
+        <input
+          type="button"
+          value="0"
+          class="col-start-2 w-12 h-12 text-white bg-gray-800 hover:bg-gray-900 font-medium rounded-full text-sm text-center"
+          onclick="Solve('0')"
+        />
+
+        <input
+          type="button"
+          value="."
+          class="w-12 h-12 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-full text-sm text-center"
+          onclick="Solve('.')"
+        />
+
+        <input
+          type="button"
+          value="="
+          class="w-12 h-12 text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-full text-sm text-center"
+          onclick="Result()"
+        />
+      </div>
+    </div>
+
+    <script>
+      function Solve(val) {
+        var v = document.getElementById("res");
+        v.value += val;
+      }
+      function Result() {
+        var num1 = document.getElementById("res").value;
+        var num2 = eval(num1);
+        document.getElementById("res").value = num2;
+      }
+      function Clear() {
+        var inp = document.getElementById("res");
+        inp.value = "";
+      }
+      function Back() {
+        var ev = document.getElementById("res");
+        ev.value = ev.value.slice(0, -1);
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>
